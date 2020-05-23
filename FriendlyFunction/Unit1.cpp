@@ -32,9 +32,9 @@ void TMyDoubleString::setSize(int newSize) {
 
 // Установить на конкретную позицию, конкретный символ
 void TMyDoubleString::setChar(int pos, char ch) {
-	cout << ch << "\n";
+
 	this->elems[pos] = (double)ch;
-	cout << (double)ch << "\n";
+
 }
 
 // Вернуть элемента на конкретной позиции в формате char
@@ -80,7 +80,7 @@ TMyCharString::TMyCharString()
 TMyCharString::TMyCharString(char* str)
 {
 	int len = strlen(str);
-	cout << "sizeChar: " << len << "\n";
+	
 	setSize(len);
 	for (int i = 0; i < len; i++) {
 		setChar(i, str[i]);
@@ -89,7 +89,7 @@ TMyCharString::TMyCharString(char* str)
 
 TMyCharString::TMyCharString(char* str, int newSize)
 {
-	cout << "sizeChar: " << newSize << "\n";
+	
 	setSize(newSize);
 	for (int i = 0; i < newSize; i++) {
 		setChar(i, str[i]);
@@ -115,7 +115,7 @@ void TMyCharString::setSize(int newSize) {
 
 void TMyCharString::setChar(int pos, char ch) {
 	this->elems[pos] = ch;
-	cout << ch << "\n";
+	
 }
 
 TMyCharString operator+(TMyCharString& str1, TMyCharString& str2) {

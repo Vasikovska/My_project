@@ -11,7 +11,7 @@ using namespace std;
 
 
 int main(int argc, char* argv[]) {
-
+    cout << "Hello in my repositories \n";
     // For Char
     char ch1[] = { 'N', '*' };
     char ch2[] = { 'A' };
